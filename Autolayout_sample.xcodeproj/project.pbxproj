@@ -14,6 +14,8 @@
 		1828634C200C839400489890 /* SwipingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1828634B200C839400489890 /* SwipingController.swift */; };
 		1828634E200C978700489890 /* PageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1828634D200C978700489890 /* PageCell.swift */; };
 		18286350200CA57500489890 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1828634F200CA57500489890 /* Page.swift */; };
+		1835EECE200F0A610038A710 /* SwipingController+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1835EECD200F0A610038A710 /* SwipingController+extension.swift */; };
+		1835EED0200F26720038A710 /* SwipingController+UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1835EECF200F26720038A710 /* SwipingController+UICollectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		1828634B200C839400489890 /* SwipingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipingController.swift; sourceTree = "<group>"; };
 		1828634D200C978700489890 /* PageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageCell.swift; sourceTree = "<group>"; };
 		1828634F200CA57500489890 /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
+		1835EECD200F0A610038A710 /* SwipingController+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwipingController+extension.swift"; sourceTree = "<group>"; };
+		1835EECF200F26720038A710 /* SwipingController+UICollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwipingController+UICollectionView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 				1828634B200C839400489890 /* SwipingController.swift */,
 				1828634D200C978700489890 /* PageCell.swift */,
 				1828634F200CA57500489890 /* Page.swift */,
+				1835EECD200F0A610038A710 /* SwipingController+extension.swift */,
+				1835EECF200F26720038A710 /* SwipingController+UICollectionView.swift */,
 			);
 			path = Autolayout_sample;
 			sourceTree = "<group>";
@@ -144,8 +150,10 @@
 				1828633C200734A400489890 /* ViewController.swift in Sources */,
 				1828633A200734A400489890 /* AppDelegate.swift in Sources */,
 				1828634E200C978700489890 /* PageCell.swift in Sources */,
+				1835EED0200F26720038A710 /* SwipingController+UICollectionView.swift in Sources */,
 				1828634C200C839400489890 /* SwipingController.swift in Sources */,
 				18286350200CA57500489890 /* Page.swift in Sources */,
+				1835EECE200F0A610038A710 /* SwipingController+extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

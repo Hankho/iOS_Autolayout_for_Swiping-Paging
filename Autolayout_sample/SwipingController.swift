@@ -56,7 +56,7 @@ class SwipingController : UICollectionViewController, UICollectionViewDelegateFl
     
     //輪播的點點點
     //屬性使用 lazy 關鍵字延後屬性初始化時間
-    private lazy var pageControl: UIPageControl = {
+    lazy var pageControl: UIPageControl = {
         let pc = UIPageControl()
         pc.numberOfPages = pages.count
         return pc
@@ -100,40 +100,5 @@ class SwipingController : UICollectionViewController, UICollectionViewDelegateFl
         collectionView?.register(PageCell.self, forCellWithReuseIdentifier: "cellId")
         
         collectionView?.isPagingEnabled = true
-        
     }
-    
-    //
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 0
-    }
-    
-    //要幾個item
-    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return pages.count
-    }
-    //
-    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellId", for: indexPath) as! PageCell
-        //index.item 從 0 開始count，所以搭配我的pages Array也是從index 0 開始
-        let page = pages[indexPath.item]
-        
-        cell.page = page
-        
-        //cell.HBimageView.image = UIImage(named: page.imageName)
-        //cell.descriptionTextView.text = page.leaderText
-        
-        
-        //cell.backgroundColor = indexPath.item % 2 == 0 ? .red : .green
-        //let imageName = imageNames[indexPath.item]
-        //cell.HBimageView.image = UIImage(named:imageName)
-        //cell.descriptionTextView.text = headerStrings[indexPath.item]
-        return cell
-    }
-    //每一個item的size,需調用 UICollectionViewDelegateFlowLayout
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: view.frame.width, height: view.frame.height)
-        
-    }
-    
 }
